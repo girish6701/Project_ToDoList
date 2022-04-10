@@ -3,11 +3,11 @@ const removeBtn = document.querySelector(".remove-btn");
 const modalCont = document.querySelector(".modal-cont");
 const allPriorityColors = document.querySelectorAll(".priority-color");
 const allColors = document.querySelectorAll(".color");
+const arr = ["lightpink", "lightgreen", "lightblue", "black"];
 
 let showModalCont = false;
 let ticketColor = "black";
 let toDelete = false;
-const arr = ["lightpink", "lightgreen", "lightblue", "black"];
 let ticketsArr = JSON.parse(localStorage.getItem("tickets")) || [];
 
 if (localStorage.getItem("tickets")) {
